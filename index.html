@@ -5,13 +5,13 @@
 	//if (window.location.protocol != "https:")
     //window.location.href = "https:" + window.location.href.substring(window.location.protocol.length);	
 	</script>
-	<title>Dashboard</title>
+	<title>Sardinas Wallet</title>
 	<meta charset="utf-8">
 	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
 	<meta name="description" content="NoxonFund investments">
 	<meta name="keywords" content="financial template, ethereum, dao ethereum, noxon project">
 	<link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <link rel="stylesheet" href="css/dashboardred.css">
+    	<link rel="stylesheet" href="css/dashboardred.css">
 	<link rel="stylesheet" href="css/jquery-u.css">
 	<script src="js/jquery.min.js"></script>
 	
@@ -24,7 +24,7 @@
 		<div class="row" id='reg'>
 		<div class="col-md-offset-2 col-md-8" style='display:none' id='right'>
 			<div class="b-form-cont">
-				<h2 class="b-form-cont__title">Create account <span style='float:right' onclick='importkey();'>import key</span></h2>
+				<h2 class="b-form-cont__title">Create account <span style='float:right' onclick='importkey();'>Import key</span></h2>
 				<div class="b-form b-form--place container-fluid">
 					<div class="b-form__row">
 						<input type="text" id='name' onkeyup='onkeyup2(this)' placeholder="Enter your name">
@@ -53,7 +53,7 @@
 					<textarea id='d12keys' onclick="this.focus();this.select()" readonly="readonly">Generation in process... Wait</textarea>
 					<br><br>
 					<i style='color:red' class="fa fa-exclamation-triangle" aria-hidden="true"></i> We do not store your private keys and will not be able to restore them.
-					<br><br><a href='#' class='btn' onclick='sv(window.location.host+"_keys.txt",getmsg());return false'>download keys</a>  or <a href='#' class='mailto'>send to email</a> <br>
+					<br><br><a href='#' class='btn' onclick='sv(window.location.host+"_keys.txt",getmsg());return false'>Download keys</a>  <!--or <a href='#' class='mailto'>Send to email</a> <br>-->
 					<Br>You will continue after save
 					
 					
