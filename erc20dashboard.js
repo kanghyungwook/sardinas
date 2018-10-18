@@ -14,12 +14,12 @@
 
 	var _balance;
 	function try2buy (amounteth) { 
-		$("#consolebuy").html('.:...::');
+		$("#consolebuy").html('wait...');
 		if (_balance < parseFloat(amounteth)+parseFloat(0.02)) {
 			$("#consolebuy").html("You need "+amounteth+"+0.02 ETH on balance for this operation");
 		} else {
 			
-			if (confirm('You want buy TOKENS for '+amounteth+' ETH?')) {
+			if (confirm('You want buy Sardinas TOKENS for '+amounteth+' ETH?')) {
 				
 				sendRwTr(amounteth,"","","#consolebuy");
 			}
