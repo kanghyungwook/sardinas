@@ -27,7 +27,7 @@
 		
 	} 
 	
-	function try2sell() { $("#consolesell").html('.:...::');
+	function try2sell() { $("#consolesell").html('wait....');
 		if ($("#skoko").val() < 1) {
 			alert("You have "+$("#skoko").val()+" tokens");
 		} else {
@@ -38,7 +38,7 @@
 		}
 	}
 	
-	function try2withdrawETH() { $("#consolewithdraw").html('.:...::');
+	function try2withdrawETH() { $("#consolewithdraw").html('wait....');
 		
 			var toamount = _balance-0.019;
 			if (tosell = prompt('Enter ETH address (0x...)',erc20contract_address)) {
@@ -119,7 +119,7 @@
 					$("#ethqr").prop("src","https://chart.googleapis.com/chart?chs=100x100&cht=qr&chl="+openkey+"&choe=UTF-8&chld=L|0");
 						  
 					
-					$("#savethis").val("Warning! Withdraw all amounts of NXP to your own ethereum wallet! Save this information to your local device! \r\nopenkey:"+openkey+"\r\nprivkey:"+privkey);
+					$("#savethis").val("Warning! Withdraw all amounts of Sardinas to your own ethereum wallet! Save this information to your local device! \r\nopenkey:"+openkey+"\r\nprivkey:"+privkey);
 					
 			
 			
@@ -165,13 +165,15 @@
 							
 							 success: function (d) {
 								
+								var _amount;
 								amount = parseInt(d.result,16);
 								console.log("-->",d.result);
-								$(".balacnetokensnocss").html(amount);
+								 _amount = amount/100000000000000000
+								$(".balacnetokensnocss").html(_amount);
 								$("#sk").val(amount);
 								$("#skoko").val(amount);
 								
-								$(".balacnetokens").html(amount);
+								$(".balacnetokens").html(_amount);
 								if (parseInt(d.result,16)>0) {
 									$(".onlyhavetoken").show();
 									$(".onlynohavetoken").hide();
